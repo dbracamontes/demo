@@ -1,0 +1,19 @@
+
+# datasource configuration for h2 db
+spring:
+  datasource:
+    url:  jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password    
+  
+# add h2 console to check and run queries
+  h2:
+    console:
+      enabled:
+        true
+        
+# jpa configuration
+  jpa:
+    hibernate:
+      ddl-auto: none
